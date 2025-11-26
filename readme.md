@@ -34,7 +34,6 @@ This project helps you understand real-world backend fundamentals in the simples
 1️⃣ Clone the repository
 
 ```
-bash
 git clone https://github.com/Shailesh2003-arch/Decentro-banking-api.git
 
 ```
@@ -42,7 +41,6 @@ git clone https://github.com/Shailesh2003-arch/Decentro-banking-api.git
 2️⃣ Install dependencies
 
 ```
-bash
 pip install -r requirements.txt
 ```
 
@@ -51,7 +49,6 @@ pip install -r requirements.txt
 4️⃣ Run the server
 
 ```
-bash
 cd banking-api
 flask run --debug
 ```
@@ -69,7 +66,6 @@ _Below is the complete API reference for testing your routes._
 _Request Body (json)_
 
 ```
-bash
 {
   "name": "Shaill",
   "email": "shaill@example.com"
@@ -80,7 +76,6 @@ bash
 _Response_
 
 ```
-bash
 {
     "_id": "69268..............",
     "email": "shaill@example.com",
@@ -95,7 +90,6 @@ bash
 _Request Body (json)_
 
 ```
-bash
 {
   "userId": "67a12bd..."
 }
@@ -104,7 +98,6 @@ bash
 _Response_
 
 ```
-bash
 {
     "_id": "6926...................",
     "balance": 0,
@@ -119,7 +112,6 @@ bash
 _Request Body(json)_
 
 ```
-bash
 {
     "accountId":"6926..........",
     "amount":500
@@ -129,7 +121,6 @@ bash
 _Response_
 
 ```
-bash
 {
     "newBalance": 500
 }
@@ -143,7 +134,6 @@ bash
 _Request Body(json)_
 
 ```
-bash
 {
 "accountId":"69267c4931fca9561c47e93a",
 "amount":300
@@ -153,7 +143,6 @@ bash
 _Response_
 
 ```
-bash
 {
     "newBalance": 200
 }
@@ -166,7 +155,7 @@ bash
 **Example:**
 
 ```
-bash /accounts/673fd.../balance
+/accounts/673fd.../balance
 ```
 
 🧮 6. Transfer funds from account to another
@@ -176,7 +165,6 @@ bash /accounts/673fd.../balance
 _Request Body(json)_
 
 ```
-bash
 {
     "from":"6926..................",
     "to":"6926..................",
@@ -188,7 +176,6 @@ bash
 _Response_
 
 ```
-bash
 {
     "message": "Transfer successful"
 }
